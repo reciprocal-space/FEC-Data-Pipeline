@@ -12,7 +12,7 @@ A simplified workflow for the processes is shown below:
 
 ![workflow](https://raw.githubusercontent.com/reciprocal-space/FEC-Data-Pipeline/master/workflow.png)
 
-The directory structure is as follows:
+##The directory structure is as follows:
 .
 ├── [       4096]  input
 │   ├── [     109475]  itcont.txt
