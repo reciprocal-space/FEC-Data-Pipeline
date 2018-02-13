@@ -12,7 +12,7 @@ The script reads each line into the database, then runs rudimentary checks on ea
 
 A simplified workflow for the processes is shown below:
 
-[[https://raw.githubusercontent.com/reciprocal-space/FEC-Data-Pipeline/master/workflow.png]]
+[https://raw.githubusercontent.com/reciprocal-space/FEC-Data-Pipeline/master/workflow.png]
 
 The directory structure is also as follows:
 
