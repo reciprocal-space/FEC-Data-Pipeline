@@ -12,7 +12,37 @@ A simplified workflow for the processes is shown below:
 
 ![workflow](https://raw.githubusercontent.com/reciprocal-space/FEC-Data-Pipeline/master/workflow.png)
 
-The directory structure is also as follows:
+The directory structure is as follows:
+├── [       4096]  input
+│   ├── [     109475]  itcont.txt
+│   └── [          3]  percentile.txt
+├── [       4096]  insight_testsuite
+│   ├── [       3025]  run_tests.sh
+│   └── [       4096]  tests
+│       ├── [       4096]  my_test2
+│       │   ├── [       4096]  input
+│       │   │   ├── [     109475]  itcont.txt
+│       │   │   └── [          3]  percentile.txt
+│       │   ├── [       4096]  ouput
+│       │   └── [          3]  percentile.txt
+│       ├── [       4096]  test_1
+│       │   ├── [       4096]  input
+│       │   │   ├── [       1388]  itcont.txt
+│       │   │   └── [          3]  percentile.txt
+│       │   └── [       4096]  output
+│       │       └── [         62]  repeat_donors.txt
+│       └── [       4096]  test_2
+│           ├── [       4096]  input
+│           │   ├── [      25263]  itcont.txt
+│           │   └── [          3]  percentile.txt
+│           └── [       4096]  output
+├── [       4096]  output
+│   └── [      21071]  repeat_donors.txt
+├── [      27111]  README.md
+├── [        303]  run.sh
+├── [       4096]  src
+│   └── [       7486]  identifyRepeatDonors.py
+└── [      23052]  workflow.png
 
 
 # Scalability and Performance
@@ -22,6 +52,7 @@ Two features have been considered for the future scalability and performance of 
 2) The hash function is implemented to speed up processes - while the search algorithm conducts a linear search to find repeat donors, the hash function groups each entry by zip code so that the algorithm has to search a much smaller dataset than the the full one
 
 Performance of the script showed that the hashing algorithm needs to be optimized. When running on the full 6.7 million line FEC database, the script took too long to execute (had to be terminated prematurely) and showed an bias towards certain bins. Correcting the bias would likely add an additional speed up to the algorithm for large datasets, and could be implemented by analysing the zip-code distribution and devising a hash function to equally spread data between bins.
+
 
 # Moving Forward
 
