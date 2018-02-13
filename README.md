@@ -12,39 +12,10 @@ A simplified workflow for the processes is shown below:
 
 ![workflow](https://raw.githubusercontent.com/reciprocal-space/FEC-Data-Pipeline/master/workflow.png)
 
-##The directory structure is as follows:
-.
-├── [       4096]  input
-│   ├── [     109475]  itcont.txt
-│   └── [          3]  percentile.txt
-├── [       4096]  insight_testsuite
-│   ├── [       3025]  run_tests.sh
-│   └── [       4096]  tests
-│       ├── [       4096]  my_test2
-│       │   ├── [       4096]  input
-│       │   │   ├── [     109475]  itcont.txt
-│       │   │   └── [          3]  percentile.txt
-│       │   ├── [       4096]  ouput
-│       │   └── [          3]  percentile.txt
-│       ├── [       4096]  test_1
-│       │   ├── [       4096]  input
-│       │   │   ├── [       1388]  itcont.txt
-│       │   │   └── [          3]  percentile.txt
-│       │   └── [       4096]  output
-│       │       └── [         62]  repeat_donors.txt
-│       └── [       4096]  test_2
-│           ├── [       4096]  input
-│           │   ├── [      25263]  itcont.txt
-│           │   └── [          3]  percentile.txt
-│           └── [       4096]  output
-├── [       4096]  output
-│   └── [      21071]  repeat_donors.txt
-├── [      27111]  README.md
-├── [        303]  run.sh
-├── [       4096]  src
-│   └── [       7486]  identifyRepeatDonors.py
-└── [      23052]  workflow.png
+# Execution
 
+To run the file, cd into the main directory and run the 'command bash ./run.sh'.
+To run the testing suite associated with the file cd into the 'insight_testsuite' folder and run './run_tests'
 
 # Scalability and Performance
 
