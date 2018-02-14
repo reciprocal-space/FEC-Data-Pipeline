@@ -15,6 +15,8 @@ A simplified workflow for the processes is shown below:
 To run the file, locate the folder containing the './run.sh' script and execute 'bash ./run.sh'.
 To run the testing suite associated with the file cd into the 'insight_testsuite' folder and run './run_tests'.
 
+To modify the input file, edit the './run.sh' script replace 'itcont.txt' with the name of your file.
+
 # Scalability and Performance
 
 Two features have been considered for the future scalability and performance of this script:
